@@ -1,4 +1,4 @@
-/* ================================= 
+/* =================================
   Base Styles
 ==================================== */
 
@@ -16,7 +16,7 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.5em;
 }
- 
+
 h1 {
 	font-size: 4rem; /* 5rem = 90px/16px  */
     text-align: center;
@@ -48,13 +48,13 @@ a {
 /* ---- Left Align Logo ---- */
 img {
 	max-width: 100%;
-	/* margin-bottom: 20px; */
+	/* margin-bottom: 10px; */
 	border-radius: 10px;
 	background-size: cover;
 }
-  
+
   /* ---- Rotate Image/Speed ---- */
-  
+
   .rotate {
 	-webkit-transition:all 0.5s ease-out;
 	-moz-transition:all 0.5s ease-out;
@@ -74,16 +74,16 @@ img {
   /* ---- Resize Logo ---- */
  .resizelogo
  {
-    
+
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 250px; 
+  width: 250px;
   height: 250%;
 
 }
 
-/* ================================= 
+/* =================================
   Base Layout Styles
 ==================================== */
 
@@ -95,7 +95,7 @@ img {
 
 .name,
 .main-nav li {
-	
+
 	text-align: center;
 	background: #fff;
 	padding: 14px 16px;
@@ -107,7 +107,7 @@ img {
 	font-size: .95em;
 	color: #3f2ed4;
 	text-transform: uppercase;
-	
+
 }
 
 .main-nav a:hover {
@@ -120,29 +120,28 @@ img {
 }
 
 .media-nav li {
-	
+
 	/* Used to horizontally align the social media icons */
-	padding: 14px 16px; 
+	padding: 14px 16px;
 	display: inline-block;
-	float: 6%; 
-	
-  
+	float: 6%;
+
 /* ---- Temp code to highlight social media icons ---- */
   	outline: 2px dashed blue;
 }
 
 .media-nav ul {
 	display: inline-block;
-	
+
 }
 
 .social-image {
 	float: inline-block;
-	
+
 }
 
 .wrap {
-  text-align: center;	
+  text-align: center;
   margin-left: auto ;
   margin-right: auto ;
 }
@@ -150,17 +149,17 @@ img {
 /* ---- Layout Containers ---- */
 
 .container {
-	
+
 	padding-left: 1em;
 	padding-right: 1em;
-	
+
 }
 
 .container2 {
 	text-align: left;
 	padding-left: 1em;
 	padding-right: 1em;
-	width: 70%;
+	width: 100%;
 	column-count: 2;
 }
 
@@ -181,21 +180,30 @@ img {
 	background: #d9e4ea;
 }
 
-/* ================================= 
+/* =================================
 Flexbox
 ==================================== */
 .containerflex {
-	
+
 	display: flex; /* =set flex container = */
 	flex-wrap: wrap;
-	
+	align-content: space-around;
+	justify-content: center;
+  align-items: center;
 }
+/* Flex use for the email form */
+.formflex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
 
-/* ================================= 
+}
+/* =================================
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
 
 	.wrap {
 		min-height: calc(100vh - 89px);
@@ -215,16 +223,44 @@ Flexbox
 
 	.name {
 		width: 240px;
-		margin-right: 50px;
-	}
- 	img { 
+
+		/* margin-right: 50px; */
+	/* }
+ 	img {
 		display: flex;
     justify-content: center;
-		
-		 
+		lex-wrap: wrap;
+		align-content: space-around;
+
 		}
+}  */
+
+@media all and (max-width: 600px) {
+	.containerflex, .container {
+		flex-direction: column;
+		max-width: 100%;
+/* Make buttons equal length and larger */
+		display: block;
+
+  	}
+  }
+
+@media (max-width: 992px) {
+	.main-header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
+  align-items: center;
+ }
+
 }
 
 
 
-
+  @media (max-width: 1030px) {
+	.containerflex {
+	  flex: none;
+	}
+  }
