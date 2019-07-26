@@ -2,4 +2,4 @@ The K-Rod page for a digital forensic company I want to start.  The logo in the 
 
 Only the HOME and CONTACT menus work for now, the others are place holders.  The wording on the main page is partly real and partly Lorem Ipsum. Code has several comments and of there is code remarked out, I plan on revisiting it after this class.
 
-The contact page has basic javascript to verify the format.  I plan on making another version of the contact page and linked the outline of it under the ABOUT tab.  
+The contact page has basic javascript to verify the format.  For now it has a popup saying true or false depending one if you put 10 digits for a phone number or something else. I plan on making another version of the contact page and linked the outline of it under the ABOUT tab if you want to look at it.  
