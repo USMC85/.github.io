@@ -127,7 +127,7 @@ img {
 	float: 6%;
 
 /* ---- Temp code to highlight social media icons ---- */
-  	outline: 2px dashed blue;
+  	/* outline: 2px dashed blue; */
 }
 
 .media-nav ul {
@@ -202,39 +202,6 @@ Flexbox
 /* =================================
   Media Queries
 ==================================== */
-
-/* @media (min-width: 769px) {
-
-	.wrap {
-		min-height: calc(100vh - 89px);
-	}
-
-	.container {
-		width: 80%;
-		max-width: 1150px;
-		margin: 0 auto;
-	}
-
-	.name,
-	.main-nav,
-	.main-nav li {
-		display: inline;
-	}
-
-	.name {
-		width: 240px;
-
-		/* margin-right: 50px; */
-	/* }
- 	img {
-		display: flex;
-    justify-content: center;
-		lex-wrap: wrap;
-		align-content: space-around;
-
-		}
-}  */
-
 @media all and (max-width: 600px) {
 	.containerflex, .container {
 		flex-direction: column;
@@ -242,7 +209,12 @@ Flexbox
 /* Make buttons equal length and larger */
 		display: block;
 
-  	}
+	  }
+	  /* Force Paragraphs to stack veritcally */
+	  .container2 {
+		display: flex;
+		flex-direction: column; 
+	  }
   }
 
 @media (max-width: 992px) {
